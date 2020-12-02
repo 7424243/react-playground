@@ -22,8 +22,8 @@ class Bomb extends React.Component {
     renderDisplay() {
         const {count} = this.state;
         if(count >= 8) {
-            return 'BOOM!!';
             clearInterval(this.interval);
+            return 'BOOM!!';
         } else if(count % 2 === 0) {
             return 'tick';
         } else {

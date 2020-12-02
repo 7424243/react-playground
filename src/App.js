@@ -7,6 +7,7 @@ import TheDate from './state/TheDate';
 import Counter from './state/Counter';
 import HelloWorld from './state-drills/HelloWorld';
 import Bomb from './state-drills/Bomb';
+import RouletteGun from './state-drills/RouletteGun';
 
 
 
@@ -25,6 +26,7 @@ const secondTooltip = (
 function App() {
   return (
     <main className='App'>
+      <RouletteGun />
       <Bomb />
       <Split className='left' flexBasis={2}>
         This is the content for the left `Split`. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ex velit suscipit facere officia?
