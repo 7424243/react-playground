@@ -10,6 +10,8 @@ import Bomb from './state-drills/Bomb';
 import RouletteGun from './state-drills/RouletteGun';
 import Tabs from './state/Tabs';
 import Accordion from './state-drills/Accordion';
+import Demonym from './demonymapp/Demonym';
+import DemonymApp from './demonymapp/DemonymApp';
 
 const tabsProp = [
   { name: 'First tab',
@@ -50,21 +52,9 @@ const secondTooltip = (
 function App() {
   return (
     <main className='App'>
-      <Accordion sections={sections}/>
-      <Tabs tabs={tabsProp} />
+      <DemonymApp />
+  
 
-      <Split className='left' flexBasis={2}>
-        This is the content for the left `Split`. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ex velit suscipit facere officia?
-        <Tooltip message='one more tooltip message'>
-          Necessitatibus?
-        </Tooltip>
-      </Split>
-
-      <Split className='right'>
-      This is the content for the right `Split`. Inventore aliquid cupiditate suscipit repellat. Quaerat quis officiis quam fuga. Aliquid quo possimus id soluta aspernatur.
-      </Split>
-      <Counter count={123}/>
-      <HelloWorld />
     </main>
   );
 }
